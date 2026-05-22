@@ -1,0 +1,390 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#2A1625;
+  color:white;
+  overflow:hidden;
+  font-family:'Nunito', sans-serif;
+}
+
+.app{
+  display:flex;
+  height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width:360px;
+
+  background:
+  linear-gradient(
+    180deg,
+    #3A1F33,
+    #2B1727
+  );
+
+  padding:24px;
+
+  overflow-y:auto;
+
+  border-right:
+  1px solid rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+
+.logo{
+
+  font-size:52px;
+
+  font-family:
+  'Playfair Display',
+  serif;
+
+  font-weight:800;
+
+  margin-bottom:14px;
+
+  line-height:1.1;
+}
+
+/* GLITTER LOGO */
+
+.glitter-logo{
+
+  background:
+  linear-gradient(
+    90deg,
+    #FFE1EC 0%,
+    #FF8EB5 25%,
+    #FFD1E3 50%,
+    #F8A8FF 75%,
+    #FFE1EC 100%
+  );
+
+  background-size:400%;
+
+  background-clip:text;
+-webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+  animation:
+  glitter 6s linear infinite;
+
+  text-shadow:
+  0 0 10px rgba(255,182,193,0.55),
+  0 0 20px rgba(255,105,180,0.45),
+  0 0 40px rgba(248,168,255,0.35);
+
+  letter-spacing:2px;
+
+  filter:brightness(1.1);
+}
+
+/* ANIMATION */
+
+@keyframes glitter{
+
+  0%{
+    background-position:0%;
+  }
+
+  100%{
+    background-position:400%;
+  }
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  color:#F8D7E8;
+
+  margin-bottom:28px;
+
+  line-height:1.5;
+
+  font-size:15px;
+}
+
+/* FILTERS */
+
+.filters{
+  display:flex;
+  flex-direction:column;
+
+  gap:15px;
+
+  margin-bottom:25px;
+}
+
+select{
+  background:#4A2940;
+
+  color:#FFD9E8;
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:18px;
+
+  font-size:15px;
+
+  outline:none;
+
+  cursor:pointer;
+}
+
+/* FOOD CARDS */
+
+.food-card{
+
+  padding:20px;
+
+  border-radius:28px;
+
+  margin-bottom:18px;
+
+  cursor:pointer;
+
+  background:
+  linear-gradient(
+    135deg,
+    #4A2940,
+    #5B2E4F
+  );
+
+  transition:0.3s;
+
+  border:
+  1px solid rgba(255,255,255,0.06);
+}
+
+.food-card:hover{
+
+  transform:
+  translateY(-4px)
+  scale(1.02);
+
+  border:
+  1px solid #FF8EB5;
+
+  box-shadow:
+  0 0 20px rgba(255,142,181,0.25);
+}
+
+/* FOOD TITLE */
+
+.food-title{
+
+  font-size:28px;
+
+  font-family:
+  'Playfair Display',
+  serif;
+
+  color:#FFD1E3;
+
+  margin-bottom:10px;
+}
+
+/* FOOD META */
+
+.food-meta{
+
+  color:#FFEAF3;
+
+  margin-bottom:8px;
+
+  font-size:15px;
+}
+
+/* RATING */
+
+.rating{
+  color:#B8FFD8;
+  font-weight:bold;
+}
+
+/* MAP */
+
+.map-container{
+  flex:1;
+  position:relative;
+}
+
+.leaflet-container{
+  height:100%;
+  width:100%;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+  background:#FF8EB5;
+
+  color:white;
+
+  border:none;
+
+  width:100%;
+
+  padding:14px;
+
+  border-radius:18px;
+
+  cursor:pointer;
+
+  margin-bottom:20px;
+
+  font-size:15px;
+
+  transition:0.3s;
+}
+
+.back-btn:hover{
+
+  background:#FFD1E3;
+
+  color:#2A1625;
+}
+
+/* ROUTE CARD */
+
+.route-card{
+
+  position:absolute;
+
+  bottom:24px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  background:
+  linear-gradient(
+    135deg,
+    #4A2940,
+    #5B2E4F
+  );
+
+  padding:22px;
+
+  width:340px;
+
+  border-radius:28px;
+
+  z-index:1000;
+
+  border:1px solid #FF8EB5;
+
+  box-shadow:
+  0 0 30px rgba(255,142,181,0.25);
+}
+
+.route-title{
+
+  font-size:24px;
+
+  font-family:
+  'Playfair Display',
+  serif;
+
+  color:#FFD1E3;
+
+  margin-bottom:10px;
+}
+
+.route-info{
+
+  color:#FFF0F6;
+
+  margin-bottom:8px;
+}
+
+/* SCROLLBAR */
+
+.sidebar::-webkit-scrollbar{
+  width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+  background:#FF8EB5;
+  border-radius:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .app{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+    height:45vh;
+  }
+
+  .map-container{
+    height:55vh;
+  }
+
+  .logo{
+    font-size:40px;
+  }
+
+  .food-title{
+    font-size:24px;
+  }
+}
+/* LOGO BOX */
+
+.logo-box{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:16px;
+
+  margin-bottom:18px;
+}
+
+/* FOODIE ICON */
+
+.logo-circle{
+
+  width:64px;
+
+  height:64px;
+
+  border-radius:20px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:30px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FF8EB5,
+    #F8A8FF
+  );
+
+  box-shadow:
+  0 0 20px rgba(255,142,181,0.35);
+
+  transform:rotate(-8deg);
+}
