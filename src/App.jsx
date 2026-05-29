@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 import "./App.css";
@@ -6,7 +7,7 @@ import MapView from "./components/MapView";
 
 import FoodCard from "./components/FoodCard";
 
-import foodPlaces from "./data/foodPlaces";
+import { foodPlaces } from "./data/foodPlaces";
 
 import calculateDistance from "./utils/distance";
 
@@ -16,51 +17,58 @@ function App() {
 
   const nitLng = 81.6052;
 
-  const [selectedType, setSelectedType] = useState("All");
+  const [selectedType, setSelectedType] =
+    useState("All");
 
-  const [minimumRating, setMinimumRating] = useState(0);
+  const [minimumRating, setMinimumRating] =
+    useState(0);
 
   // SELECTED PLACE
 
-  const [selectedPlace, setSelectedPlace] = useState(null);
+  const [selectedPlace, setSelectedPlace] =
+    useState(null);
 
   // FILTERS
 
-  const filteredPlaces = foodPlaces.filter((place) => {
+  const filteredPlaces = foodPlaces.filter(
+    (place) => {
 
-    const matchesType =
+      const matchesType =
 
-      selectedType === "All" ||
+        selectedType === "All" ||
 
-      place.type === selectedType;
+        place.items.includes(selectedType);
 
-    const matchesRating =
+      const matchesRating =
 
-      place.rating >= minimumRating;
+        place.rating >= minimumRating;
 
-    return matchesType && matchesRating;
-  });
+      return matchesType && matchesRating;
+    }
+  );
 
-  // SORTING
+  // SORTING BY DISTANCE
 
-  const sortedPlaces = [...filteredPlaces].sort((a, b) => {
+  const sortedPlaces = [...filteredPlaces].sort(
+    (a, b) => {
 
-    const distanceA = calculateDistance(
-      nitLat,
-      nitLng,
-      a.lat,
-      a.lng
-    );
+      const distanceA = calculateDistance(
+        nitLat,
+        nitLng,
+        a.lat,
+        a.lng
+      );
 
-    const distanceB = calculateDistance(
-      nitLat,
-      nitLng,
-      b.lat,
-      b.lng
-    );
+      const distanceB = calculateDistance(
+        nitLat,
+        nitLng,
+        b.lat,
+        b.lng
+      );
 
-    return distanceA - distanceB;
-  });
+      return distanceA - distanceB;
+    }
+  );
 
   // SHOW ONLY SELECTED CARD
 
@@ -79,21 +87,22 @@ function App() {
       {/* SIDEBAR */}
 
       <div className="sidebar">
-      <div className="logo-box">
 
-  <div className="logo-circle">
+        <div className="logo-box">
 
-    😋
+          <div className="logo-circle">
 
-  </div>
+            😋
 
-  <h1 className="logo glitter-logo">
+          </div>
 
-    𝘾𝙝𝙖𝙩𝙤𝙧𝙚
+          <h1 className="logo glitter-logo">
 
-  </h1>
+            𝘾𝙝𝙖𝙩𝙤𝙧𝙚
 
-</div>
+          </h1>
+
+        </div>
 
         <p className="subtitle">
 
@@ -109,10 +118,15 @@ function App() {
 
             <div className="filters">
 
+              {/* FOOD FILTER */}
+
               <select
                 value={selectedType}
+
                 onChange={(e) =>
-                  setSelectedType(e.target.value)
+                  setSelectedType(
+                    e.target.value
+                  )
                 }
               >
 
@@ -124,22 +138,41 @@ function App() {
                   Momos
                 </option>
 
-                <option value="Rolls">
-                  Rolls
+                <option value="Spring Roll">
+                  Spring Roll
+                </option>
+
+                <option value="Pizza">
+                  Pizza
+                </option>
+
+                <option value="Burger">
+                  Burger
+                </option>
+
+                <option value="Coffee">
+                  Coffee
+                </option>
+
+                <option value="Dosa">
+                  Dosa
                 </option>
 
                 <option value="Biryani">
                   Biryani
                 </option>
 
-                <option value="Cafe">
-                  Cafe
+                <option value="Tea">
+                  Tea
                 </option>
 
               </select>
 
+              {/* RATING FILTER */}
+
               <select
                 value={minimumRating}
+
                 onChange={(e) =>
                   setMinimumRating(
                     Number(e.target.value)
@@ -167,21 +200,24 @@ function App() {
 
         }
 
-        {/* RESET BUTTON */}
+        {/* BACK BUTTON */}
 
         {
 
           selectedPlace && (
 
             <button
-            className="back-btn"
-          
-            onClick={() =>
-              setSelectedPlace(null)
-            }
-          >
-            ← Back To Results
-          </button>
+              className="back-btn"
+
+              onClick={() =>
+                setSelectedPlace(null)
+              }
+            >
+
+              ← Back To Results
+
+            </button>
+
           )
 
         }
@@ -204,12 +240,14 @@ function App() {
                 place={place}
 
                 distance={
+
                   calculateDistance(
                     nitLat,
                     nitLng,
                     place.lat,
                     place.lng
                   ).toFixed(2)
+
                 }
               />
 
@@ -227,6 +265,7 @@ function App() {
 
         <MapView
           places={displayedCards}
+
           selectedPlace={selectedPlace}
         />
 
@@ -237,3 +276,4 @@ function App() {
 }
 
 export default App;
+
