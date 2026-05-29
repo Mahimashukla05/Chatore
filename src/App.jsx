@@ -203,14 +203,16 @@ function App() {
               <FoodCard
                 place={place}
 
-                distance={
-                  calculateDistance(
-                    nitLat,
-                    nitLng,
-                    place.lat,
-                    place.lng
-                  ).toFixed(2)
-                }
+            distance={
+  (
+    calculateDistance(
+      nitLat,
+      nitLng,
+      place.lat,
+      place.lng
+    ) * 1.8
+  ).toFixed(1)
+}
               />
 
             </div>
