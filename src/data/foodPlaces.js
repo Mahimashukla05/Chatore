@@ -2,13 +2,85 @@ export const foodPlaces = [
 
 {
   id: 1,
+  name: "Suto Cafe",
+  rating: 4.7,
+  category: "Cafe",
+  veg: true,
+  lat: 21.2510,
+  lng: 81.6070,
+  price: "₹100-200",
+
+  items: [
+    "Momos",
+    "Burger",
+    "Coffee",
+    "Fries"
+  ]
+},
+
+{
+  id: 2,
+  name: "Nukkad Tea Cafe",
+  rating: 4.4,
+  category: "Cafe",
+  veg: true,
+  lat: 21.2521,
+  lng: 81.6085,
+  price: "₹100-300",
+
+  items: [
+    "Tea",
+    "Momos",
+    "Spring Roll",
+    "Sandwich"
+  ]
+},
+
+{
+  id: 3,
+  name: "Mishhh Cafe",
+  rating: 4.6,
+  category: "Cafe",
+  veg: false,
+  lat: 21.2532,
+  lng: 81.6092,
+  price: "₹300-600",
+
+  items: [
+    "Pizza",
+    "Burger",
+    "Pasta",
+    "Mocktail"
+  ]
+},
+
+{
+  id: 4,
+  name: "Punjabi Dhaba",
+  rating: 4.0,
+  category: "North Indian",
+  veg: false,
+  lat: 21.2480,
+  lng: 81.6030,
+  price: "₹150-400",
+
+  items: [
+    "Paneer",
+    "Naan",
+    "Biryani",
+    "Thali"
+  ]
+},
+
+{
+  id: 5,
   name: "Indian Coffee House",
   rating: 4.2,
   category: "South Indian",
   veg: true,
-  lat: 21.2517,
-  lng: 81.6058,
-  price: "₹200-400",
+  lat: 21.2472,
+  lng: 81.6025,
+  price: "₹100-250",
 
   items: [
     "Dosa",
@@ -19,86 +91,50 @@ export const foodPlaces = [
 },
 
 {
-  id: 2,
-  name: "Millets Cafe",
-  rating: 4.2,
-  category: "Cafe",
+  id: 6,
+  name: "Gadh Kalewa",
+  rating: 4.3,
+  category: "Traditional",
   veg: true,
-  lat: 21.2523,
-  lng: 81.6069,
-  price: "₹200-400",
-
-  items: [
-    "Burger",
-    "Pasta",
-    "Coffee",
-    "Sandwich"
-  ]
-},
-
-{
-  id: 3,
-  name: "Punjabi Dhaba",
-  rating: 3.6,
-  category: "North Indian",
-  veg: false,
-  lat: 21.2542,
-  lng: 81.6018,
-  price: "₹200-400",
-
-  items: [
-    "Paneer",
-    "Naan",
-    "Thali",
-    "Chicken Curry"
-  ]
-},
-
-{
-  id: 4,
-  name: "Mishhh Cafe & Restaurant",
-  rating: 4.6,
-  category: "Cafe",
-  veg: false,
-  lat: 21.2574,
-  lng: 81.5986,
-  price: "₹400-600",
-
-  items: [
-    "Pizza",
-    "Burger",
-    "Fries",
-    "Mocktail"
-  ]
-},
-
-{
-  id: 5,
-  name: "Premium Delight Cafe",
-  rating: 4.6,
-  category: "Cafe",
-  veg: true,
-  lat: 21.2583,
-  lng: 81.5979,
+  lat: 21.2460,
+  lng: 81.6010,
   price: "₹100-200",
 
   items: [
-    "Coffee",
-    "Sandwich",
-    "Fries",
-    "Momos"
+    "Poha",
+    "Jalebi",
+    "Tea",
+    "Chila"
   ]
 },
 
 {
-  id: 6,
+  id: 7,
+  name: "Global Tea Cafe",
+  rating: 4.5,
+  category: "Cafe",
+  veg: true,
+  lat: 21.2550,
+  lng: 81.6115,
+  price: "₹100-300",
+
+  items: [
+    "Tea",
+    "Coffee",
+    "Burger",
+    "Fries"
+  ]
+},
+
+{
+  id: 8,
   name: "The Terrace Lounge",
-  rating: 3.8,
+  rating: 4.1,
   category: "Multi Cuisine",
   veg: false,
-  lat: 21.2558,
-  lng: 81.6125,
-  price: "₹200-400",
+  lat: 21.2562,
+  lng: 81.6128,
+  price: "₹300-700",
 
   items: [
     "Pizza",
@@ -109,110 +145,74 @@ export const foodPlaces = [
 },
 
 {
-  id: 7,
-  name: "Nukkad Cafe & Co-working",
-  rating: 4.5,
-  category: "Cafe",
-  veg: true,
-  lat: 21.2431,
-  lng: 81.6290,
-  price: "₹200-400",
-
-  items: [
-    "Momos",
-    "Spring Roll",
-    "Coffee",
-    "Burger"
-  ]
-},
-
-{
-  id: 8,
-  name: "Nukkad Tea Cafe",
-  rating: 4.4,
-  category: "Cafe",
-  veg: true,
-  lat: 21.2405,
-  lng: 81.6345,
-  price: "₹200-400",
-
-  items: [
-    "Tea",
-    "Momos",
-    "Sandwich",
-    "Fries"
-  ]
-},
-
-{
   id: 9,
-  name: "Global Tea Cafe",
-  rating: 4.8,
-  category: "Cafe",
+  name: "Manju Mamta Restaurant",
+  rating: 4.0,
+  category: "South Indian",
   veg: true,
-  lat: 21.2380,
-  lng: 81.6372,
-  price: "₹200-400",
+  lat: 21.2445,
+  lng: 81.6002,
+  price: "₹100-200",
 
   items: [
-    "Tea",
+    "Dosa",
+    "Idli",
     "Coffee",
-    "Burger",
-    "Spring Roll"
+    "Vada"
   ]
 },
 
 {
   id: 10,
-  name: "Girnar Restaurant",
-  rating: 4.1,
-  category: "North Indian",
-  veg: false,
-  lat: 21.2370,
-  lng: 81.6338,
-  price: "₹200-600",
+  name: "TAN Coffee",
+  rating: 4.8,
+  category: "Cafe",
+  veg: true,
+  lat: 21.2575,
+  lng: 81.6140,
+  price: "₹300-900",
 
   items: [
-    "Thali",
-    "Paneer",
-    "Biryani",
-    "Naan"
+    "Coffee",
+    "Brownie",
+    "Pizza",
+    "Pasta"
   ]
 },
 
 {
   id: 11,
-  name: "Gadh Kalewa",
-  rating: 4.3,
-  category: "Traditional",
+  name: "Premium Delight Cafe",
+  rating: 4.5,
+  category: "Cafe",
   veg: true,
-  lat: 21.2455,
-  lng: 81.6400,
-  price: "₹100-200",
+  lat: 21.2508,
+  lng: 81.6065,
+  price: "₹100-250",
 
   items: [
-    "Poha",
-    "Jalebi",
-    "Chila",
-    "Tea"
+    "Coffee",
+    "Sandwich",
+    "Fries",
+    "Momos"
   ]
 },
 
 {
   id: 12,
-  name: "TAN Coffee",
-  rating: 4.8,
+  name: "Cafe Junoon",
+  rating: 4.3,
   category: "Cafe",
-  veg: true,
-  lat: 21.2468,
-  lng: 81.6415,
-  price: "₹200-1200",
+  veg: false,
+  lat: 21.2588,
+  lng: 81.6152,
+  price: "₹300-600",
 
   items: [
-    "Coffee",
-    "Pasta",
+    "Burger",
     "Pizza",
-    "Brownie"
+    "Pasta",
+    "Coffee"
   ]
 },
 
@@ -222,51 +222,51 @@ export const foodPlaces = [
   rating: 4.4,
   category: "Pure Veg Cafe",
   veg: true,
-  lat: 21.2622,
-  lng: 81.6562,
-  price: "₹400-1200",
+  lat: 21.2595,
+  lng: 81.6160,
+  price: "₹400-800",
 
   items: [
     "Pizza",
     "Burger",
-    "Coffee",
-    "Dessert"
+    "Dessert",
+    "Coffee"
   ]
 },
 
 {
   id: 14,
-  name: "Manju Mamta Restaurant",
-  rating: 4.0,
-  category: "South Indian",
-  veg: true,
-  lat: 21.2362,
-  lng: 81.6331,
-  price: "₹100-200",
+  name: "Roll Express",
+  rating: 4.1,
+  category: "Fast Food",
+  veg: false,
+  lat: 21.2528,
+  lng: 81.6089,
+  price: "₹100-250",
 
   items: [
-    "Dosa",
-    "Idli",
-    "Vada",
-    "Coffee"
+    "Rolls",
+    "Spring Roll",
+    "Momos",
+    "Fries"
   ]
 },
 
 {
   id: 15,
-  name: "Suto Cafe",
-  rating: 4.7,
-  category: "Cafe",
-  veg: true,
-  lat: 21.2595,
-  lng: 81.5950,
-  price: "₹100-200",
+  name: "Street Bowl",
+  rating: 4.2,
+  category: "Street Food",
+  veg: false,
+  lat: 21.2538,
+  lng: 81.6101,
+  price: "₹100-300",
 
   items: [
+    "Biryani",
     "Momos",
     "Burger",
-    "Fries",
-    "Coffee"
+    "Tea"
   ]
 }
 
