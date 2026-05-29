@@ -244,7 +244,7 @@ distance={
     nitLng,
     place.lat,
     place.lng
-  ).toFixed(1)
+  ).toFixed(2)
 }
               />
 
