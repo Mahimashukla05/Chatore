@@ -6,8 +6,10 @@ export const foodPlaces = [
   rating: 4.2,
   category: "South Indian",
   veg: true,
-  lat: 21.2525,
-  lng: 81.6105,
+
+  lat: 21.2488,
+  lng: 81.6090,
+
   price: "₹100-250",
 
   items: [
@@ -24,8 +26,10 @@ export const foodPlaces = [
   rating: 4.7,
   category: "Cafe",
   veg: true,
-  lat: 21.2530,
-  lng: 81.6110,
+
+  lat: 21.2492,
+  lng: 81.6095,
+
   price: "₹100-200",
 
   items: [
@@ -42,8 +46,10 @@ export const foodPlaces = [
   rating: 4.4,
   category: "Cafe",
   veg: true,
-  lat: 21.2538,
-  lng: 81.6118,
+
+  lat: 21.2498,
+  lng: 81.6102,
+
   price: "₹100-300",
 
   items: [
@@ -60,8 +66,10 @@ export const foodPlaces = [
   rating: 4.6,
   category: "Cafe",
   veg: false,
-  lat: 21.2545,
-  lng: 81.6125,
+
+  lat: 21.2504,
+  lng: 81.6110,
+
   price: "₹300-600",
 
   items: [
@@ -78,8 +86,10 @@ export const foodPlaces = [
   rating: 4.0,
   category: "North Indian",
   veg: false,
-  lat: 21.2550,
-  lng: 81.6130,
+
+  lat: 21.2509,
+  lng: 81.6118,
+
   price: "₹150-400",
 
   items: [
@@ -96,8 +106,10 @@ export const foodPlaces = [
   rating: 4.1,
   category: "Fast Food",
   veg: false,
-  lat: 21.2555,
-  lng: 81.6138,
+
+  lat: 21.2515,
+  lng: 81.6125,
+
   price: "₹100-250",
 
   items: [
@@ -114,8 +126,10 @@ export const foodPlaces = [
   rating: 4.2,
   category: "Street Food",
   veg: false,
-  lat: 21.2560,
-  lng: 81.6142,
+
+  lat: 21.2520,
+  lng: 81.6130,
+
   price: "₹100-300",
 
   items: [
@@ -132,8 +146,10 @@ export const foodPlaces = [
   rating: 4.5,
   category: "Cafe",
   veg: true,
-  lat: 21.2568,
-  lng: 81.6150,
+
+  lat: 21.2525,
+  lng: 81.6136,
+
   price: "₹100-300",
 
   items: [
@@ -150,8 +166,10 @@ export const foodPlaces = [
   rating: 4.1,
   category: "Multi Cuisine",
   veg: false,
-  lat: 21.2575,
-  lng: 81.6158,
+
+  lat: 21.2530,
+  lng: 81.6142,
+
   price: "₹300-700",
 
   items: [
@@ -168,8 +186,10 @@ export const foodPlaces = [
   rating: 4.8,
   category: "Cafe",
   veg: true,
-  lat: 21.2582,
-  lng: 81.6165,
+
+  lat: 21.2535,
+  lng: 81.6148,
+
   price: "₹300-900",
 
   items: [
