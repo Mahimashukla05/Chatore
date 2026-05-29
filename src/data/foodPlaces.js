@@ -1,203 +1,204 @@
 export const foodPlaces = [
+  {
+    id: 1,
+    name: "Indian Coffee House",
+    rating: 4.3,
+    category: "South Indian",
+    veg: true,
+    lat: 21.2478,
+    lng: 81.6033,
+    price: "₹100–₹200",
+    items: ["Masala Dosa", "Idli Sambhar", "Filter Coffee", "Uttapam", "Vada", "Chole Bhature"],
+  },
+  {
+    id: 2,
+    name: "Kabila Cafe & Restaurant",
+    rating: 4.4,
+    category: "Multi Cuisine",
+    veg: false,
+    lat: 21.2491,
+    lng: 81.6058,
+    price: "₹200–₹400",
+    items: ["Momos", "Chowmein", "Spring Roll", "Paneer Tikka", "Chicken Roll", "Cold Coffee"],
+  },
+  {
+    id: 3,
+    name: "Little Hut Restaurant",
+    rating: 4.1,
+    category: "North Indian",
+    veg: false,
+    lat: 21.2465,
+    lng: 81.6071,
+    price: "₹150–₹350",
+    items: ["Dal Makhani", "Butter Naan", "Paneer Butter Masala", "Biryani", "Tandoori Chicken", "Lassi"],
+  },
+  {
+    id: 4,
+    name: "Kikki's Cafe",
+    rating: 4.2,
+    category: "Cafe",
+    veg: false,
+    lat: 21.2457,
+    lng: 81.6089,
+    price: "₹150–₹300",
+    items: ["Coffee", "Cold Coffee", "Burger", "Sandwich", "Pasta", "Brownie"],
+  },
+  {
+    id: 5,
+    name: "Food Lab Amanaka",
+    rating: 3.9,
+    category: "Fast Food",
+    veg: false,
+    lat: 21.2482,
+    lng: 81.6044,
+    price: "₹80–₹150",
+    items: ["Chicken Roll", "Chicken Cutlet", "Chicken Kabab", "Veg Roll", "French Fries", "Cold Drink"],
+  },
+  {
+    id: 6,
+    name: "Nukkad Tea Cafe",
+    rating: 4.0,
+    category: "Tea Cafe",
+    veg: true,
+    lat: 21.2468,
+    lng: 81.6052,
+    price: "₹30–₹120",
+    items: ["Masala Chai", "Ginger Tea", "Lemon Tea", "Maggi", "Bread Omelette", "Biscuits"],
+  },
+  {
+    id: 7,
+    name: "Momo Corner – Saraswati Nagar",
+    rating: 3.8,
+    category: "Street Food",
+    veg: false,
+    lat: 21.2518,
+    lng: 81.6062,
+    price: "₹50–₹120",
+    items: ["Steamed Momos", "Fried Momos", "Chilli Momos", "Spring Roll", "Soup", "Noodles"],
+  },
+  {
+    id: 8,
+    name: "Chai Thela – NIT Gate",
+    rating: 4.0,
+    category: "Tea Cafe",
+    veg: true,
+    lat: 21.2484,
+    lng: 81.6018,
+    price: "₹10–₹60",
+    items: ["Tea", "Masala Chai", "Black Coffee", "Maggi", "Samosa", "Kachori"],
+  },
+  {
+    id: 9,
+    name: "Panipuri Stall – Saraswati Nagar Chowk",
+    rating: 4.2,
+    category: "Street Food",
+    veg: true,
+    lat: 21.2522,
+    lng: 81.6071,
+    price: "₹20–₹60",
+    items: ["Panipuri", "Sev Puri", "Bhel Puri", "Dahi Puri", "Aloo Tikki", "Samosa"],
+  },
+  {
+    id: 10,
+    name: "Chai Point – Amanaka",
+    rating: 4.0,
+    category: "Tea Cafe",
+    veg: true,
+    lat: 21.2476,
+    lng: 81.6037,
+    price: "₹20–₹80",
+    items: ["Cutting Chai", "Masala Tea", "Green Tea", "Samosa", "Biscuits", "Poha"],
+  },
+  {
+    id: 11,
+    name: "Biryani House – Kota Road",
+    rating: 4.1,
+    category: "North Indian",
+    veg: false,
+    lat: 21.2536,
+    lng: 81.5991,
+    price: "₹120–₹280",
+    items: ["Chicken Biryani", "Mutton Biryani", "Veg Biryani", "Raita", "Salan", "Gulab Jamun"],
+  },
+  {
+    id: 12,
+    name: "Street Wok – Saraswati Nagar",
+    rating: 3.9,
+    category: "Street Food",
+    veg: false,
+    lat: 21.2512,
+    lng: 81.6048,
+    price: "₹60–₹150",
+    items: ["Momos", "Wai Wai Noodles", "Chilli Chicken", "Spring Roll", "Fried Rice", "Soup"],
+  },
+  {
+    id: 13,
+    name: "Rohan Juice Corner",
+    rating: 4.1,
+    category: "Street Food",
+    veg: true,
+    lat: 21.2487,
+    lng: 81.6026,
+    price: "₹30–₹100",
+    items: ["Sugarcane Juice", "Mango Shake", "Lassi", "Watermelon Juice", "Mixed Fruit Juice", "Coconut Water"],
+  },
+  {
+    id: 14,
+    name: "NIT Canteen – Main Block",
+    rating: 3.6,
+    category: "Multi Cuisine",
+    veg: false,
+    lat: 21.2472,
+    lng: 81.6025,
+    price: "₹30–₹100",
+    items: ["Maggi", "Samosa", "Tea", "Bread Omelette", "Poha", "Paratha"],
+  },
+  {
+    id: 15,
+    name: "Nalanda Dhaba – Nalanda Parisar",
+    rating: 3.8,
+    category: "North Indian",
+    veg: false,
+    lat: 21.2494,
+    lng: 81.5987,
+    price: "₹80–₹180",
+    items: ["Thali", "Dal Baati", "Sabzi", "Roti", "Rice", "Chutney"],
+  },
+  {
+    id: 16,
+    name: "Momos Adda – Geeta Nagar",
+    rating: 4.0,
+    category: "Street Food",
+    veg: false,
+    lat: 21.2462,
+    lng: 81.6098,
+    price: "₹50–₹130",
+    items: ["Pan-fried Momos", "Steamed Momos", "Chilli Momos", "Tandoori Momos", "Spring Roll", "Soup"],
+  },
+  {
+    id: 17,
+    name: "Idli Dosa King – Amlihdih",
+    rating: 3.9,
+    category: "South Indian",
+    veg: true,
+    lat: 21.2435,
+    lng: 81.6149,
+    price: "₹60–₹160",
+    items: ["Masala Dosa", "Plain Dosa", "Idli", "Upma", "Coconut Chutney", "Filter Coffee"],
+  },
+];
 
-{
-  id: 1,
-  name: "Indian Coffee House",
-  rating: 4.2,
-  category: "South Indian",
-  veg: true,
-
-  lat: 21.2488,
-  lng: 81.6090,
-
-  price: "₹100-250",
-
-  items: [
-    "Dosa",
-    "Coffee",
-    "Idli",
-    "Vada"
-  ]
-},
-
-{
-  id: 2,
-  name: "Suto Cafe",
-  rating: 4.7,
-  category: "Cafe",
-  veg: true,
-
-  lat: 21.2492,
-  lng: 81.6095,
-
-  price: "₹100-200",
-
-  items: [
-    "Momos",
-    "Burger",
-    "Coffee",
-    "Fries"
-  ]
-},
-
-{
-  id: 3,
-  name: "Nukkad Tea Cafe",
-  rating: 4.4,
-  category: "Cafe",
-  veg: true,
-
-  lat: 21.2498,
-  lng: 81.6102,
-
-  price: "₹100-300",
-
-  items: [
-    "Tea",
-    "Momos",
-    "Spring Roll",
-    "Sandwich"
-  ]
-},
-
-{
-  id: 4,
-  name: "Mishhh Cafe",
-  rating: 4.6,
-  category: "Cafe",
-  veg: false,
-
-  lat: 21.2504,
-  lng: 81.6110,
-
-  price: "₹300-600",
-
-  items: [
-    "Pizza",
-    "Burger",
-    "Pasta",
-    "Mocktail"
-  ]
-},
-
-{
-  id: 5,
-  name: "Punjabi Dhaba",
-  rating: 4.0,
-  category: "North Indian",
-  veg: false,
-
-  lat: 21.2509,
-  lng: 81.6118,
-
-  price: "₹150-400",
-
-  items: [
-    "Paneer",
-    "Naan",
-    "Biryani",
-    "Thali"
-  ]
-},
-
-{
-  id: 6,
-  name: "Roll Express",
-  rating: 4.1,
-  category: "Fast Food",
-  veg: false,
-
-  lat: 21.2515,
-  lng: 81.6125,
-
-  price: "₹100-250",
-
-  items: [
-    "Rolls",
-    "Spring Roll",
-    "Momos",
-    "Fries"
-  ]
-},
-
-{
-  id: 7,
-  name: "Street Bowl",
-  rating: 4.2,
-  category: "Street Food",
-  veg: false,
-
-  lat: 21.2520,
-  lng: 81.6130,
-
-  price: "₹100-300",
-
-  items: [
-    "Biryani",
-    "Momos",
-    "Burger",
-    "Tea"
-  ]
-},
-
-{
-  id: 8,
-  name: "Global Tea Cafe",
-  rating: 4.5,
-  category: "Cafe",
-  veg: true,
-
-  lat: 21.2525,
-  lng: 81.6136,
-
-  price: "₹100-300",
-
-  items: [
-    "Tea",
-    "Coffee",
-    "Burger",
-    "Fries"
-  ]
-},
-
-{
-  id: 9,
-  name: "The Terrace Lounge",
-  rating: 4.1,
-  category: "Multi Cuisine",
-  veg: false,
-
-  lat: 21.2530,
-  lng: 81.6142,
-
-  price: "₹300-700",
-
-  items: [
-    "Pizza",
-    "Pasta",
-    "Chicken Wings",
-    "Burger"
-  ]
-},
-
-{
-  id: 10,
-  name: "TAN Coffee",
-  rating: 4.8,
-  category: "Cafe",
-  veg: true,
-
-  lat: 21.2535,
-  lng: 81.6148,
-
-  price: "₹300-900",
-
-  items: [
-    "Coffee",
-    "Brownie",
-    "Pizza",
-    "Pasta"
-  ]
-}
-
+export const foodFilters = [
+  "All",
+  "Momos",
+  "Spring Roll",
+  "Burger",
+  "Coffee",
+  "Tea",
+  "Dosa",
+  "Biryani",
+  "Noodles",
+  "Juice",
+  "Paratha",
+  "Samosa",
 ];
